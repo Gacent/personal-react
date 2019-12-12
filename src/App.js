@@ -1,13 +1,17 @@
 import React ,{Component,Fragment}from 'react';
 import {
-  Test1
+  TodoList,
+  TodoInput,
+  TodoHeader
 } from './components'
-
+// console.log(TodoList)
 export default class App extends Component {
   render() {
     return (
       <Fragment>
-        <Test1 title="test1"></Test1>
+        {/* <TodoHeader></TodoHeader>
+        <TodoInput></TodoInput>
+        <TodoList></TodoList> */}
       </Fragment>
     )
   }
