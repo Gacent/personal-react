@@ -1,15 +1,16 @@
 import React ,{Component,Fragment}from 'react';
 import {
-  Test1,
-  Test2
+  CounterBtn,
+  Counter
 } from './components'
 
 export default class App extends Component {
   render() {
     return (
       <Fragment>
-        <Test1></Test1>
-        <Test2></Test2>
+        <CounterBtn type="decrease">-</CounterBtn>
+        <Counter>10</Counter>
+        <CounterBtn type="increase">+</CounterBtn>
       </Fragment>
     )
   }
