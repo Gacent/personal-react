@@ -1,16 +1,14 @@
-import React ,{Component,Fragment}from 'react';
-import {
-  Test1,
-  Test2
-} from './components'
+import React, { Component } from 'react'
 
-export default class App extends Component {
+import Another from './Another'
+const App = class App extends Component {
   render() {
     return (
-      <Fragment>
-        <Test1></Test1>
-        <Test2></Test2>
-      </Fragment>
+      <div>
+        <Another name="我是name"></Another>
+      </div>
     )
   }
 }
+
+export default App

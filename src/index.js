@@ -1,20 +1,9 @@
-import React,{useState,useEffect}from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-// import App from './App';
 
-const Count=()=>{
-  const [name,setName]=useState(10)
-  useEffect(()=>{
-    console.log('更新le ')
-  })
-  return (
-    <div>
-      <button onClick={()=>setName(name-1)}>-</button>
-      <span>{name}</span>
-      <button onClick={()=>setName(name+1)}>+</button>
-    </div>
-  )
-}
+import App from './App'
 
-ReactDOM.render(<Count />, document.getElementById('root'));
+ReactDOM.render(
+  <App/>,
+  document.querySelector('#root')
+)
